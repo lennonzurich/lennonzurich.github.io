@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Lennon Jia">
+
+
+
+
+
+<title>SWEN90016-SPM-1 | LennonJia‘sBlog</title>
+
+
+
+    <link rel="icon" href="/image/avatar.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Lennon&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Lennon&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">SWEN90016-SPM-1</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Lennon Jia</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">February 15, 2020&nbsp;&nbsp;23:19:58</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/2020/">2020</a>
+                            
+                                <a href="/categories/2020/Notes/">Notes</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="Introduction-to-Projects"><a href="#Introduction-to-Projects" class="headerlink" title="Introduction to Projects"></a>Introduction to Projects</h3><ul>
+<li><p>Definition: Project</p>
+<ul>
+<li>A temporary endeavor to create a unique product, service or outcome.</li>
+</ul>
+</li>
+<li><p>Key elements/characteristics:</p>
+<ul>
+<li><p>Introduce CHANGE to the organisation</p>
+</li>
+<li><p>TEMPORARY, it has a defined beginning and end</p>
+</li>
+<li><p>CROSS-FUNCTIONAL, cuts across organisational boundaries</p>
+</li>
+<li><p>Deals with the UNKNOWN</p>
+</li>
+<li><p>UNIQUE</p>
+</li>
+<li><p>They all vary in SIZE</p>
+<ul>
+<li>person</li>
+<li>money</li>
+<li>time</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>why use them</p>
+<ul>
+<li><p>Provides strategic alignment of key activities and visibility at the appropriate levels</p>
+</li>
+<li><p>Mechanism to prioritise activities</p>
+<ul>
+<li>(Benefits, Regulatory, HW Refresh)</li>
+</ul>
+</li>
+<li><p>deliver change</p>
+</li>
+<li><p>Effective and efficient management of organisations </p>
+</li>
+<li><p>Establish ownership and accountability</p>
+</li>
+<li><p>Provide clarity, buy-in and agreement </p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Introduction-to-Project-Management"><a href="#Introduction-to-Project-Management" class="headerlink" title="Introduction to Project Management"></a>Introduction to Project Management</h3><ul>
+<li><p>Definition: Project Management</p>
+<ul>
+<li>Project Management is the planning, delegating, monitoring and controlling of all aspects of a project, and motivating those involved to achieve the project objectives within the expected targets for time, costs, quality, scope, benefits and risks.</li>
+</ul>
+</li>
+<li><p>Value lies in:</p>
+<ul>
+<li>Organising and structuring scarce resources</li>
+<li>Managing risk</li>
+<li>Identifying and clearing issues</li>
+<li>Managing and implementing change</li>
+<li>Retaining and re-using knowledge</li>
+<li>Organisational wide learning from past success and failures</li>
+</ul>
+</li>
+</ul>
+<h3 id="Introduction-to-Project-Manager"><a href="#Introduction-to-Project-Manager" class="headerlink" title="Introduction to Project Manager"></a>Introduction to Project Manager</h3><ul>
+<li><p>Definition: Project Manager</p>
+<ul>
+<li>Project managers are highly skilled knowledge workers and change agents. They take accountability, make project goals their own and use their skills and expertise to inspire a sense of shared purpose across the project team. They enjoy the organised adrenaline of new challenges and the responsibility of driving business results.</li>
+</ul>
+</li>
+<li><p>Core Skills / Attributes:</p>
+<ul>
+<li>Work well under pressure</li>
+<li>Comfortable with change and complexity in changing environments</li>
+<li>Use / have the right people skills</li>
+<li>Adapt, resolve issues and deal with problems</li>
+<li>Effective communicators regardless of hierarchy</li>
+<li>Action orientated and leave nothing for tomorrow</li>
+<li>Command &amp; Control</li>
+<li>Good ones are in demand, hard to find and get paid a lot</li>
+</ul>
+</li>
+<li><p>Project Manager Key Activities</p>
+<ul>
+<li><p>Traditional</p>
+<ul>
+<li><p>Planning</p>
+<ul>
+<li>Define and clarify project scope</li>
+<li>Develop the project management plan(PMP)</li>
+<li>Develop the project schedule</li>
+<li>Develop policies and procedures to<br>support the achievement of the project objectives</li>
+</ul>
+</li>
+<li><p>Organising</p>
+<ul>
+<li>Determine the project team structure</li>
+<li>Identify roles and responsibilities</li>
+<li>Identify services to be provided by<br>external companies</li>
+<li>Staff all project positions and on-going<br>management</li>
+</ul>
+</li>
+<li><p>Leading</p>
+<ul>
+<li>Setting team direction</li>
+<li>Owning &amp; coordinating activities across<br>different organisational functions</li>
+<li>Motivating team members</li>
+<li>Assigning work</li>
+</ul>
+</li>
+<li><p>Controlling</p>
+<ul>
+<li>Defining project baselines</li>
+<li>Tracking project progress</li>
+<li>Project status reporting</li>
+<li>Determining and taking corrective<br>actions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Agile: Scrum Master</p>
+<ul>
+<li><p>Move from Command and Control to Servant Leadership</p>
+<ul>
+<li>Coaches and facilitates teams to deliver</li>
+<li>Emphasises objectives</li>
+<li>Is invested in the program’s overall performance</li>
+<li>Asks the teams for answers</li>
+<li>Allows the teams to self-organise and hit their stride(进步，进展)</li>
+<li>Assists others with fixing issues</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Project Manager key requirement: knowledge of</p>
+<ul>
+<li><p>multiple models</p>
+<ul>
+<li><p>agile and running sprints</p>
+</li>
+<li><p>formal project management</p>
+<ul>
+<li>setting and achieving deadlines on timing and scope</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Introduction-to-some-Project-Management-Methodologies-Standards"><a href="#Introduction-to-some-Project-Management-Methodologies-Standards" class="headerlink" title="Introduction to (some) Project Management Methodologies/Standards"></a>Introduction to (some) Project Management Methodologies/Standards</h3><ul>
+<li><p>waterfall</p>
+<ul>
+<li><p>Key elements</p>
+<ul>
+<li>Traditional approach used for over 40 years(mature model)</li>
+<li>Requirements must be defined at the start</li>
+<li>Little / no alternations</li>
+<li>Sequential - Complete 1 task and then the next</li>
+<li>Used in large scale SW development where thorough planning and predictability is required</li>
+</ul>
+</li>
+<li><p>Pros</p>
+<ul>
+<li>Extensive planning, this thoroughness often results in more accurate timelines and budgets</li>
+</ul>
+</li>
+<li><p>Cons</p>
+<ul>
+<li>Difficult to apply changes or modify / correct previous steps (water can’t run backwards), need to be proactive in anticipating problems</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>agile</p>
+<ul>
+<li><p>Key elements</p>
+<ul>
+<li>Focuses on adapting to changing situations</li>
+<li>Reliant on constant and regular feedback</li>
+<li>Focuses on iterative outcomes delivering value as quickly as possible &amp; collaboratively</li>
+<li>Small manageable actions and activities</li>
+<li>Involvement &amp; ownership across the team – Team members self select work</li>
+<li>Customer focus over formalised sign-offs</li>
+</ul>
+</li>
+<li><p>Pros</p>
+<ul>
+<li>Retains flexibility while continually producing outcomes – less rework</li>
+<li>Greater communication &amp; engagement – increased buy in across the team of the<br>end outcome</li>
+</ul>
+</li>
+<li><p>Cons</p>
+<ul>
+<li>Difficult to do without experience – especially an experienced Scrum Master</li>
+<li>Large projects co-location a problem</li>
+<li>Difficult to contract(承诺) suppliers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Structured Project Management Methodologies</p>
+<ul>
+<li><p>e.g. PRICNE 2 etc</p>
+</li>
+<li><p>key elements</p>
+<ul>
+<li>Widely used and accepted - Consulting, Private and Government</li>
+<li>Process orientated approach</li>
+<li>Divides projects into multiple stages</li>
+<li>Detailed and thorough</li>
+<li>Must have a clear need, a target customer, realistic benefits, and a thorough cost analysis</li>
+</ul>
+</li>
+<li><p>Pros</p>
+<ul>
+<li>Extensive documentation is helpful with corporate planning &amp; tracking</li>
+</ul>
+</li>
+<li><p>Cons</p>
+<ul>
+<li>Difficult and untimely to adapt changes and apply these to all documentation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>How to choose?</p>
+<ul>
+<li>Clarity and stability of scope</li>
+<li>Timelines</li>
+<li>Tools to support / drive the process</li>
+<li>People / knowledge</li>
+<li>Organisational maturity</li>
+<li>Stakeholder buy-in</li>
+<li>Experience in the various approaches</li>
+</ul>
+</li>
+</ul>
+<h3 id="key-drivers-of-why-projects-fail-succeed"><a href="#key-drivers-of-why-projects-fail-succeed" class="headerlink" title="key drivers of why projects fail / succeed"></a>key drivers of why projects fail / succeed</h3><ul>
+<li><p>software projects</p>
+<ul>
+<li><p>successful</p>
+<ul>
+<li>on-time, on-budget with all features and functions as initially specified.</li>
+</ul>
+</li>
+<li><p>challenged</p>
+<ul>
+<li>completed and operational but over-budget, over time estimate or offers fewer features and functions than planned.</li>
+</ul>
+</li>
+<li><p>failed</p>
+<ul>
+<li>project is cancelled at some point during the development cycle.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Project-screening"><a href="#Project-screening" class="headerlink" title="Project screening"></a>Project screening</h3><ul>
+<li><p>Organisations need a formal, structured approach to:</p>
+<ul>
+<li>Select</li>
+<li>Prioritise</li>
+<li>Have oversight</li>
+<li>Drive accountability(责任，义务) across all projects.</li>
+</ul>
+</li>
+<li><p>project screening</p>
+<ul>
+<li><p>initial</p>
+<ul>
+<li>Transformational</li>
+<li>Regulatory</li>
+<li>RIsk</li>
+<li>Refresh</li>
+<li>BAU</li>
+</ul>
+</li>
+<li><p>Business Planning Selection</p>
+</li>
+<li><p>Concept Phase Selection Filter</p>
+</li>
+<li><p>Planning &amp; Execution</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Project-Initialization"><a href="#Project-Initialization" class="headerlink" title="Project Initialization"></a>Project Initialization</h3><ul>
+<li><p>Methodologies</p>
+<ul>
+<li>PRINCE2</li>
+<li>PMBOK</li>
+<li>Agile</li>
+</ul>
+</li>
+<li><p>Business Case</p>
+<ul>
+<li><p>Purpose: establish mechanisms to judge whether the project is (and remains) desirable, viable and achievable as a means to support decision making in its initial and continued investment.</p>
+<ul>
+<li>Provides a factual base for key decisions makers to decide if the project should be undertaken</li>
+<li>Demonstrates how the project adds value to the organisation</li>
+<li>Has a set of pre-defined standard organisational characteristics (costs, benefits, risk, etc.)</li>
+<li>It is not all about size - size depends on the cost / benefit</li>
+<li>It is a living document throughout the project that should be reviewed and signed off at key stages</li>
+</ul>
+</li>
+<li><p>contains</p>
+<ul>
+<li>Executive(执行的，管理的) summary</li>
+<li>Reasons / explanation of why it is required</li>
+<li>Business options</li>
+<li>Expected benefits</li>
+<li>Expected dis-benefits</li>
+<li>Timescale</li>
+<li>Costs</li>
+<li>Investment appraisal(评价，估价)</li>
+<li>Major risks</li>
+</ul>
+</li>
+<li><p>Roles &amp; Responsibilities</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Investment"><a href="#Investment" class="headerlink" title="Investment"></a>Investment</h3><ul>
+<li><p>Techniques</p>
+<ul>
+<li><p>ROI = return on investment</p>
+<ul>
+<li><p>ROI is income divided by investment</p>
+<ul>
+<li>ROI = (total discounted benefits – total discounted costs) / total discounted costs</li>
+</ul>
+</li>
+<li><p>The higher the ROI % or higher the ratio of benefits to costs, the better it is</p>
+</li>
+<li><p>Many organisations have a required rate of return or minimum acceptable rate of return on investment for projects (11% to 14%)</p>
+</li>
+</ul>
+</li>
+<li><p>NPV = Net Present Value</p>
+<ul>
+<li><p>NPV is one of the most often used quantitative/financial models for project selection</p>
+</li>
+<li><p>calculating the expected net monetary gain or loss from an investment (project)</p>
+<ul>
+<li><p>discounting all future costs and benefits to the present time</p>
+<ul>
+<li>Projects with a positive NPV should be considered if financial value is a key criterion</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>the higher the NPV, the more favourable a project is</p>
+</li>
+</ul>
+</li>
+<li><p>Payback period</p>
+<ul>
+<li><p>the amount of time it takes a project before the accrued benefits surpass(胜过) accrued costs or how much time an investment takes to recover its initial cost</p>
+<ul>
+<li>time: accrued benefits - accrued costs &gt; 0</li>
+</ul>
+</li>
+<li><p>Based on tracking the net cash flow across each year to determine the year that net benefits overtake net costs (not discounted cash flows)</p>
+</li>
+<li><p>Many organizations want IT projects to have a fairly short payback period (&lt; 1 year) due to the changing nature of technology</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Project Estimation: Rough Order of Magnitude (ROM)</p>
+<ul>
+<li>The Cone of Uncertainty for cost estimates</li>
+<li>Limited accuracy</li>
+</ul>
+</li>
+</ul>
+<h3 id="Project-Planning"><a href="#Project-Planning" class="headerlink" title="Project Planning"></a>Project Planning</h3><ul>
+<li>Start with: Project Charter</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://lennonzurich.github.io/2020/02/15/SWEN90016-SPM-1/">http://lennonzurich.github.io/2020/02/15/SWEN90016-SPM-1/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Everything is Temporary.</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Software-Processes-and-Management/"># Software Processes and Management</a>
+                    
+                        <a href="/tags/notes/"># notes</a>
+                    
+                        <a href="/tags/unimelb/"># unimelb</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2020/02/15/Github-pages-Hexo-%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-1/">Github pages + Hexo 创建个人网站(1)</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Lennon Jia | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
