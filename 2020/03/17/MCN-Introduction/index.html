@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Lennon Jia">
+
+
+
+
+
+<title>MCN Introduction | LennonJia‘sBlog</title>
+
+
+
+    <link rel="icon" href="/image/avatar.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Lennon&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Lennon&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">MCN Introduction</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Lennon Jia</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">March 17, 2020&nbsp;&nbsp;22:48:44</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/2020/">2020</a>
+                            
+                                <a href="/categories/2020/Notes/">Notes</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="MCN"><a href="#MCN" class="headerlink" title="MCN"></a>MCN</h2><h3 id="定义：Multi-ChannelNetwork（多频道网络）"><a href="#定义：Multi-ChannelNetwork（多频道网络）" class="headerlink" title="定义：Multi-ChannelNetwork（多频道网络）"></a>定义：Multi-ChannelNetwork（多频道网络）</h3><ul>
+<li>e.g. 跟网红签约的经纪公司</li>
+</ul>
+<h3 id="KOL-Key-opinion-leader"><a href="#KOL-Key-opinion-leader" class="headerlink" title="KOL: Key opinion leader"></a>KOL: Key opinion leader</h3><ul>
+<li>e.g. 网红</li>
+</ul>
+<h3 id="经营模式"><a href="#经营模式" class="headerlink" title="经营模式"></a>经营模式</h3><ul>
+<li><p>MCN签约创作者</p>
+<ul>
+<li>提供资源支持</li>
+<li>跟平台接洽推广</li>
+<li>广告收入分成</li>
+</ul>
+</li>
+</ul>
+<h3 id="MCN公司类型"><a href="#MCN公司类型" class="headerlink" title="MCN公司类型"></a>MCN公司类型</h3><ul>
+<li><p>1.内容生产型</p>
+<ul>
+<li>有“内容”</li>
+<li>专有IP或专栏</li>
+<li>e.g. 二更</li>
+</ul>
+</li>
+<li><p>2.网红资源运营型</p>
+<ul>
+<li>签约大量网红</li>
+<li>聚焦泛娱乐领域</li>
+<li>e.g.网红经纪公司</li>
+</ul>
+</li>
+<li><p>3.自研孵化型</p>
+<ul>
+<li>自己打造素人</li>
+<li>e.g. 大禹，papitube</li>
+</ul>
+</li>
+<li><p>4.IP产业布局型</p>
+<ul>
+<li><p>通过品牌授权、衍生品开发等形式开展业务</p>
+</li>
+<li><p>广为人知的形象IP</p>
+<ul>
+<li>版权变现</li>
+</ul>
+</li>
+<li><p>e.g. 漫画工作室</p>
+</li>
+</ul>
+</li>
+<li><p>5.电商内容型</p>
+<ul>
+<li>电商+内容</li>
+<li>短视频变现</li>
+<li>e.g. 淘宝直播</li>
+</ul>
+</li>
+</ul>
+<h3 id="地理分布"><a href="#地理分布" class="headerlink" title="地理分布"></a>地理分布</h3><ul>
+<li>北上广深最多，二线发达城市增长</li>
+</ul>
+<h3 id="基础业态"><a href="#基础业态" class="headerlink" title="基础业态"></a>基础业态</h3><ul>
+<li><p>内容生产业态</p>
+<ul>
+<li>以内容生产为主，逐步工业化，IP化</li>
+<li>e.g. 二更</li>
+</ul>
+</li>
+<li><p>运营业态</p>
+<ul>
+<li><p>IP孵化</p>
+<ul>
+<li><p>内容</p>
+<ul>
+<li>内容策划</li>
+<li>选题把控</li>
+<li>内容传播</li>
+</ul>
+</li>
+<li><p>平台</p>
+<ul>
+<li>规则研究</li>
+<li>内容分发</li>
+</ul>
+</li>
+<li><p>账号</p>
+<ul>
+<li>账号定位</li>
+<li>粉丝管理</li>
+<li>矩阵规则</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>e.g. 大禹</p>
+<ul>
+<li>运营带动内容，ip孵化</li>
+</ul>
+</li>
+<li><p>e.g. 末那传媒</p>
+<ul>
+<li>人物形象ip+内容ip</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>营销业态</p>
+<ul>
+<li><p>e.g. 蜂群文化</p>
+<ul>
+<li><p>批量账号</p>
+<ul>
+<li><p>KOL资料库</p>
+</li>
+<li><p>KOL全维度分析</p>
+<ul>
+<li>原创内容</li>
+<li>粉丝画像</li>
+</ul>
+</li>
+<li><p>选择和campaign（风向？）契合度最高的KOL</p>
+</li>
+<li><p>广告主，博主沟通</p>
+</li>
+<li><p>确认KOL名单和推广方案</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>电商业态</p>
+<ul>
+<li><p>红人电商</p>
+<ul>
+<li>红人直接带动销售转化</li>
+<li>e.g. 张大奕，学历，滕雨佳，李佳琪</li>
+</ul>
+</li>
+<li><p>内容电商</p>
+<ul>
+<li>e.g. 李子柒</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>经济业态</p>
+<ul>
+<li><p>e.g. papitube</p>
+<ul>
+<li><p>孵化+经纪+营销</p>
+<ul>
+<li>商业全约</li>
+<li>艺人约</li>
+<li>商务约</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>社群/知识付费业态</p>
+<ul>
+<li><p>e.g. 灵魂有香气的女子</p>
+<ul>
+<li>内容+电商+广告+社群</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>IP授权，版权业态</p>
+<ul>
+<li>e.g. 幕星社</li>
+</ul>
+</li>
+</ul>
+<h3 id="变现方式"><a href="#变现方式" class="headerlink" title="变现方式"></a>变现方式</h3><ul>
+<li><p>第一梯队</p>
+<ul>
+<li><p>广告营销：80%</p>
+<ul>
+<li>e.g. 大禹文化，橘子娱乐，万粒科技</li>
+</ul>
+</li>
+<li><p>平台补贴：48%</p>
+</li>
+</ul>
+</li>
+<li><p>第二梯队</p>
+<ul>
+<li><p>内容电商：35.5%</p>
+<ul>
+<li>e.g. 如涵控股，微念科技，美ONE</li>
+</ul>
+</li>
+<li><p>课程销售：22.6%</p>
+</li>
+</ul>
+</li>
+<li><p>第三梯队</p>
+<ul>
+<li><p>衍生品销售</p>
+</li>
+<li><p>ip授权</p>
+<ul>
+<li>e.g. 吾皇的白茶，长草颜团子</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="平台依赖"><a href="#平台依赖" class="headerlink" title="平台依赖"></a>平台依赖</h3><ul>
+<li><p>社交平台</p>
+<ul>
+<li>e.g. 微信，微博</li>
+<li>KOL资源池，具备媒体树形，社交沉淀优势明显</li>
+</ul>
+</li>
+<li><p>资讯平台</p>
+<ul>
+<li>算法推荐，精准匹配受众</li>
+<li>流量优势</li>
+</ul>
+</li>
+<li><p>短视频平台</p>
+<ul>
+<li>强大的生产工具</li>
+<li>用户下沉覆盖三四线城市</li>
+<li>大量UGC-用户原创内容</li>
+</ul>
+</li>
+<li><p>垂直平台</p>
+<ul>
+<li>e.g. bilibili，马蜂窝，汽车之家</li>
+<li>用户特征突出，社群粉丝效应明显</li>
+<li>影响力大</li>
+</ul>
+</li>
+<li><p>电商平台</p>
+<ul>
+<li>用户购买转化率高</li>
+</ul>
+</li>
+<li><p>直播平台</p>
+<ul>
+<li>付费意愿直接</li>
+<li>红人表现直接</li>
+<li>利于粉丝运营</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://lennonzurich.github.io/2020/03/17/MCN-Introduction/">http://lennonzurich.github.io/2020/03/17/MCN-Introduction/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Everything is Temporary.</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/MCN/"># MCN</a>
+                    
+                        <a href="/tags/Content-Operation/"># Content Operation</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2020/02/25/%E5%89%91%E6%8C%87offer2/">剑指offer2</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Lennon Jia | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
